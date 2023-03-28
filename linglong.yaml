@@ -1,0 +1,25 @@
+package:
+  id: qtx11extras
+  name: qtx11extras
+  kind: lib
+  version: 5.11.3
+  description: |
+    qtx11extras
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtx11extras-opensource-src.git
+  version: uos/5.11.3
+  commit: 231ca26fd2c47332f169659683458746392853f6
+
+  patch: []
+build:
+  kind: qmake
